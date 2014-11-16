@@ -1,0 +1,16 @@
+{
+   "name": "admin-lte-angular",
+
+   "version": "0.0.1",
+
+   "main": "admin-lte-angular.js",
+
+   "private": "true",
+
+   "devDependencies": {},
+
+   "dependencies": {
+      "angular": "~1.3.2",
+      "bootstrap": "~3.3.0"
+   }
+}
