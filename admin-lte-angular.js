@@ -1,3 +1,4 @@
+/* Sarah Henderson - admin-lte-angular 0.0.1 */
 angular.module('admin-lte-angular.templates', []).run(['$templateCache', function($templateCache) {
   $templateCache.put("dropdown-menu/dropdown-messages.tpl.html",
     "<li class=\"dropdown messages-menu\">\n" +
@@ -268,9 +269,9 @@ angular.module('admin-lte-angular.templates', []).run(['$templateCache', functio
       templateUrl: function(elem, scope) {
         return "dropdown-menu/dropdown-" + scope.type + ".tpl.html";
       },
-      controller: function($scope) {
+      controller: ["$scope", function($scope) {
         return console.log('Dropdown Menu');
-      }
+      }]
     };
   });
 
@@ -359,7 +360,7 @@ angular.module('admin-lte-angular.templates', []).run(['$templateCache', functio
       templateUrl: function(elem, scope) {
         return 'sidebar-menu/template.tpl.html';
       },
-      controller: function($scope) {
+      controller: ["$scope", function($scope) {
         var item, _i, _len, _ref, _ref1;
         _ref = $scope.menuItems;
         for (_i = 0, _len = _ref.length; _i < _len; _i++) {
@@ -369,7 +370,7 @@ angular.module('admin-lte-angular.templates', []).run(['$templateCache', functio
           item.hasBadge = !(item.badge == null);
         }
         return console.log($scope.menuItems);
-      }
+      }]
     };
   });
 

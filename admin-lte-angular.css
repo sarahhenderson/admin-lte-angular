@@ -1,5 +1,7 @@
+/* Sarah Henderson - admin-lte-angular 0.0.1 */
 @import url(//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,300italic,400italic,600italic);
 @import url(//fonts.googleapis.com/css?family=Kaushan+Script);
+/* ----------------------- Fonts -------------------------------------- */
 /* ----------------------- Admin LTE Imports -------------------------------------- */
 /*
     Core: General style
@@ -3395,8 +3397,22 @@ fieldset[disabled] .btn-vk.active {
   color: #587ea3;
   background-color: #ffffff;
 }
-/* ----------------------- Variables -------------------------------------- */
-/* ----------------------- App-wide custom styles ------------------------- */
+/* ----------------------- Angular-specific overrides ------------------------- */
+.header .logo {
+  text-decoration: none;
+}
+.sidebar .sidebar-menu .treeview-menu {
+  display: block;
+}
+.pointy,
+.nav,
+.pagination,
+.carousel,
+.panel-title a,
+.sidebar .sidebar-menu .treeview {
+  cursor: pointer;
+}
+/* ----------------------- Utility styles ------------------------- */
 .padded-bottom {
   padding-bottom: 5px;
 }
@@ -3426,31 +3442,4 @@ fieldset[disabled] .btn-vk.active {
 }
 .marginal {
   margin: 5px;
-}
-form .help-block.error {
-  display: none;
-}
-form .has-error .help-block.error {
-  display: block;
-}
-form .help-inline.error {
-  display: none;
-}
-form .has-error .help-inline.error {
-  display: inline-block;
-}
-/* ----------------------- Angular-specific overrides ------------------------- */
-.header .logo {
-  text-decoration: none;
-}
-.sidebar .sidebar-menu .treeview-menu {
-  display: block;
-}
-.pointy,
-.nav,
-.pagination,
-.carousel,
-.panel-title a,
-.sidebar .sidebar-menu .treeview {
-  cursor: pointer;
 }
