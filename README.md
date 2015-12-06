@@ -12,7 +12,7 @@ Currently implemented are directives for sidebar menu, top menu dropdown lists a
 
 ### Install
 
-`bower install git://github.com/sarahhendeson/admin-lte-angular.git --save`
+`bower install git://github.com/sarahhenderson/admin-lte-angular.git --save`
 
 Include the following files in your HTML:
 
